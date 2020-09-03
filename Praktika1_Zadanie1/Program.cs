@@ -27,9 +27,19 @@ namespace Praktika1_Zadanie1
     static void Main(string[] args)
     {
       string sk = "Microsoft .NET Framework 2 Application Development Foundation";
-      string[] sa = sk.Split('.');
-      foreach 
-      Console.WriteLine(sa);
+      string[] sa = sk.Split(' ');
+      foreach (string poch in sa)
+      {
+        Console.WriteLine(poch);
+      }
+      Array.Sort(sa);
+      Console.WriteLine();
+      foreach (string poch in sa)
+      {
+        Console.WriteLine(poch);
+      }
+      sk = string.Join(' ', sa);
+      Console.WriteLine(sk);
       SByte a = 0;
       Byte b = 0;
       Int16 c = 0;
